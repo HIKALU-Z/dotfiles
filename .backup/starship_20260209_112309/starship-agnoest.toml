@@ -1,0 +1,115 @@
+# JSON Schema 校验（编辑器自动补全，可选）
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# -------------------------- 核心配置：Agnoster 标志性布局 --------------------------
+# 还原 agnoster 极简分层结构：用户@主机 → 目录 → Git 分支/状态 → 命令提示符
+# 移除冗余模块，仅保留 agnoster 核心信息，贴合原版风格
+format = """
+[](bg:blue fg:black)\
+$username\
+$hostname\
+[](bg:green fg:blue)\
+$directory\
+[](bg:yellow fg:green)\
+$git_branch\
+$git_status\
+[](fg:yellow)\
+$line_break\
+$character
+"""
+
+# -------------------------- Agnoster 核心配色体系（还原原版） --------------------------
+[palettes.agnoster]
+# Agnoster 原版核心配色（黑/白为基础，蓝/绿/黄为功能色）
+black = "#000000"
+white = "#ffffff"
+blue = "#0084ff"   # 用户/主机模块背景
+green = "#719837"  # 目录模块背景
+yellow = "#e2b93d" # Git 模块背景
+red = "#ff5c57"    # 错误提示符颜色
+gray = "#808080"   # 辅助文字颜色
+
+# 应用 agnoster 配色（全局生效）
+palette = 'agnoster'
+
+# -------------------------- 模块 1：用户名（Agnoster 核心） --------------------------
+[username]
+show_always = true              # 始终显示（agnoster 原版默认显示）
+style_user = "bg:blue fg:white" # 蓝底白字（贴合 agnoster 原版）
+style_root = "bg:red fg:white"  # root 用户红底白字（agnoster 风格）
+# Agnoster 格式：用户名 + @ 符号（与主机名衔接）
+format = '[ $user@ ]($style)'
+
+# -------------------------- 模块 2：主机名（仅远程/非本机显示，贴合 agnoster） --------------------------
+[hostname]
+ssh_only = true                  # 仅 SSH 远程连接时显示（agnoster 原版逻辑）
+style = "bg:blue fg:white"
+format = '[ $hostname ]($style)'
+
+# -------------------------- 模块 3：工作目录（Agnoster 极简风格） --------------------------
+[directory]
+style = "bg:green fg:white"  # 绿底白字（agnoster 原版）
+format = '[ $path ]($style)'
+# Agnoster 路径截断逻辑：仅保留最后 2 级，过长时用 …/ 替代
+truncation_length = 2
+truncation_symbol = "…/"
+# 移除冗余目录别名，保持 agnoster 极简风格
+[directory.substitutions]
+"~" = "~" # 仅保留家目录符号，不额外替换
+
+# -------------------------- 模块 4：Git 分支（Agnoster 核心模块） --------------------------
+[git_branch]
+symbol = " "                                                # Agnoster 原版 Git 分支图标
+style = "bg:yellow fg:black"                                 # 黄底黑字（agnoster 原版）
+format = '[[ $symbol $branch ](fg:black bg:yellow)]($style)'
+disabled = false
+
+# -------------------------- 模块 5：Git 状态（简化版，贴合 agnoster 极简） --------------------------
+[git_status]
+style = "bg:yellow fg:black" # 与 Git 分支配色统一
+# 仅显示核心状态（无冗余符号，贴合 agnoster 风格）
+format = '[[($all_status$ahead_behind )](fg:black bg:yellow)]($style)'
+disabled = false
+# 低版本兼容：注释掉 symbols 嵌套配置（避免报错）
+# [git_status.symbols]
+# ahead = "↑"
+# behind = "↓"
+# untracked = "?"
+# staged = "✓"
+# unstaged = "✗"
+
+# -------------------------- 模块 6：命令输入提示符（Agnoster 标志性 ❯） --------------------------
+[character]
+disabled = false
+# Agnoster 原版提示符：成功绿色，失败红色
+success_symbol = '[❯](bold fg:green)'
+error_symbol = '[❯](bold fg:red)'
+# 简化 vim 模式符号（贴合 agnoster 极简风格）
+vimcmd_symbol = '[❮](bold fg:green)'
+vimcmd_replace_one_symbol = '[❮](bold fg:yellow)'
+vimcmd_replace_symbol = '[❮](bold fg:yellow)'
+
+# -------------------------- 模块 7：换行配置（Agnoster 原版换行风格） --------------------------
+[line_break]
+disabled = false # 启用换行，让命令输入区更整洁（agnoster 原版特性）
+
+# -------------------------- 冗余模块禁用（贴合 agnoster 极简） --------------------------
+# 禁用 agnoster 原版无的模块，保持风格统一
+[os]
+disabled = true
+
+[conda]
+disabled = true
+
+
+[nodejs]
+disabled = true
+
+[python]
+disabled = true
+
+[time]
+disabled = true
+
+[cmd_duration]
+disabled = true

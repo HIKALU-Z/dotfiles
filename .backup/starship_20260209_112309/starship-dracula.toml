@@ -1,0 +1,105 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# 全局样式
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$rust\
+$golang\
+$docker_context\
+$line_break\
+$character"""
+
+palette = "dracula"
+
+[palettes.dracula]
+foreground = "#f8f8f2"
+background = "#282a36"
+comment = "#6272a4"
+red = "#ff5555"
+green = "#50fa7b"
+yellow = "#f1fa8c"
+purple = "#bd93f9"
+pink = "#ff79c6"
+orange = "#ffb86c"
+cyan = "#8be9fd"
+
+# 用户名（仅远程时显示）
+[username]
+show_always = false
+style_user = "purple"
+style_root = "red"
+format = "[$user]($style) "
+
+# 主机名（仅远程时显示）
+[hostname]
+ssh_only = true
+style = "purple"
+format = "@[$hostname]($style) "
+
+# 当前目录
+[directory]
+style = "purple"
+format = "[$path]($style) "
+truncation_length = 3
+truncation_symbol = "…/"
+
+# Git 分支
+[git_branch]
+style = "pink"
+format = "on [$symbol$branch]($style) "
+symbol = " "
+
+# Git 状态（干净/修改等）
+[git_status]
+style = "foreground"
+conflicted = "red"
+ahead = "green"
+behind = "red"
+diverged = "yellow"
+untracked = "comment"
+modified = "yellow"
+staged = "green"
+renamed = "green"
+deleted = "red"
+format = '([$all_status$ahead_behind]($style)) '
+
+# Python
+[python]
+style = "yellow"
+format = "via [${symbol}${pyenv_prefix}${version}]($style) "
+symbol = "🐍 "
+
+# Node.js
+[nodejs]
+style = "green"
+format = "via [${symbol}${version}]($style) "
+symbol = "⬢ "
+
+# Rust
+[rust]
+style = "orange"
+format = "via [${symbol}${version}]($style) "
+symbol = "🦀 "
+
+# Go
+[golang]
+style = "cyan"
+format = "via [${symbol}${version}]($style) "
+symbol = "🐹 "
+
+# Docker Context
+[docker_context]
+style = "blue"
+format = "via [🐳 $context]($style) "
+
+# 命令提示符
+[character]
+success_symbol = "[❯](purple)"
+error_symbol = "[❯](red)"
+vimcmd_symbol = "[❮](green)"

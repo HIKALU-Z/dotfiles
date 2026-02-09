@@ -1,0 +1,959 @@
+ls
+cd e:\code\
+ls
+cd mepo\
+gst
+git status
+lg
+lazygit
+ls
+npm --version
+$env
+$env.WEZTERM_CONFIG_FILE
+$nu.config-path
+code $nu.config-path
+ls
+$nu.config-path
+oh-my-phsh --version
+$env.WEZTERM_CONFIG_FILE
+$env:POSH_THEMES_PATH
+oh-my-posh init nu --config "$env:POSH_THEMES_PATH\tokyo-night.omp.json" | save -f ~/.cache/oh-my-posh.nu
+oh-my-posh init nu --config ~/.poshthemes/M365Princess.omp.json
+oh-my-posh init nu --config ~/.poshthemes/M365Princess.omp.json  | save -f ~/.cache/oh-my-posh.nu
+$env:POSH_THEMES_PATH
+oh-my-posh init nu | save -f ~/.cache/oh-my-posh.nu
+cd ~
+ls
+cd .cache\
+ls
+oh-my-posh init nu
+ls
+oh-my-posh --version
+oh-my-posh --help
+source
+source --help
+source oh-my-posh.nu
+$env:POSH_THEMES
+cd .cache\
+ls
+rm oh-my-posh.nu
+ls
+oh-my-posh init nu --config "C:/Users/DQ00658/.config/wezterm/posh-themes/hikalu.omp.json" | save -f ~/.cache/oh-my-posh.nu
+oh-my-posh get shell
+nu --version
+ll
+ls
+oh-my-posh init nu --config "C:\Users/DQ00658\.config\wezterm\posh-themes\hikalu.omp.json" | save -f ~/.cache/oh-my-posh.nu
+oh-my-posh init nu --config "C:\\Users\\DQ00658\\.config\\wezterm\\posh-themes\\hikalu.omp.json" | save -f ~/.cache/oh-my-posh.nu
+cd .cache\
+ls
+cd .cache\
+ls
+oh-my-posh init nu --config 'C:\Users\DQ00658\.config\wezterm\posh-themes\hikalu.omp.json' | save -f ~/Documents/.oh-my-posh.nu
+ls
+cd .config\wezterm\
+ls
+oh-my-posh init nu --config 'C:\Users\DQ00658\.config\wezterm\posh-themes\hikalu.omp.json' | save -f ~/.config/wezterm/oh-my-posh.nu
+ls
+ls -ah
+oh-my-posh init nu
+ls
+cd ~/.cache/
+ls
+oh-my-posh --help
+oh-my-posh -c
+oh-my-posh get config
+oh-my-posh get config -c
+aaa
+nu --version
+cd ~/.config/wezterm/
+starship preset pastel-powerline -o ~/.config/starship.toml
+ls
+cd e:\code\
+ls
+cd mepo\
+ls
+cd ~/.config
+ls
+code starship.toml
+ls
+cd wezterm\
+ls
+gst
+git status
+lazygit
+git status
+git remote add origin git@github.com:HIKALU-Z/wezterm-config.git
+ls
+git branch -M main
+git push -u origin main
+oh-my-posh --version
+cd ~/.config/
+ls
+oh-my-posh init nu
+ls
+cd ~/.cache/
+ls
+rm oh-my-posh.nu
+oh-my-posh init nu
+ls
+oh-my-posh init nu --config ~/.poshthemes/M365Princess.omp.json
+cd ~
+ls
+code .
+ls
+oh-my-posh init nu --config ~/.config/wezterm/posh-themes/hikalu.omp.json
+ls
+sudo
+oh-my-posh init nu --config "C://Users//DQ00658//.config//wezterm//posh-themes//hikalu.omp.json" | save -f ~/.config/wezterm/oh-my-posh.nu
+cd ~/.config/wezterm/
+ls
+"test" | save -f ~/.oh-my-posh.nu
+ls
+oh-my-posh font install
+oh-my-posh font install firacode
+oh-my-posh font install meslo
+oh-my-posh get shell
+oh-my-posh init nu
+ls
+cd ~
+ls
+vi .oh-my-posh.nu
+code .oh-my-posh.nu
+oh-my-posh font install meslo
+oh-my-posh font install firacode
+oh-my-posh init nu
+ls
+cd ~/.config/wezterm/
+ls
+rm oh-my-posh.nu
+oh-my-posh init nu --config ~/.config/wezterm/posh-themes/hikalu.omp.json | save -f ~/.config/wezterm/oh-my-push.nu
+ls
+"test" | save -f ~/.oh-my-posh.nu
+ls
+cd ~
+ls
+rm oh-my-posh.nu
+oh-my-posh init nu
+ls
+oh-my-posh init nu --config 'M365Princessa'
+ls
+oh-my-posh init nu --config 'M365Princessa'
+winget
+cd ~/.config/wezterm/
+ls
+ls -ah
+ls -l
+cd ~
+ls
+oh-my-posh init nu --config c:\Users\DQ00658\hikalu.omp.json | safe -f ~/oh-my-posh.nu
+oh-my-posh init nu --config c:\Users\DQ00658\hikalu.omp.json | save -f ~/oh-my-posh.nu
+ls
+system info
+winver
+oh-my-posh --version
+nu --version
+oh-my-posh debug --plain
+ls
+oh-my-posh init nu --config ~/hikalu.omp.json
+oh-my-posh debug --plain
+oh-my-posh init nu --config ~/hikalu.omp.json | save -f ~/oh-my-posh.nu
+ls
+rm oh-my-posh.nu
+ls
+oh-my-posh init nu --config ~/hikalu.omp.json | save -f ~/oh-my-posh.nu
+ls
+oh-my-posh init nu --config 'C:\Users\DQ00658\.config\wezterm\posh-themes\hikalu.omp.json' | save -f ~/Documents/.oh-my-posh.nu
+oh-my-posh init nu --config 'C:\Users\DQ00658\.config\wezterm\posh-themes\hikalu.omp.json' | save -f ~/.config/wezterm/.oh-my-posh.nu
+cd .config\wezterm\
+ls
+oh-my-posh init nu | save -f ~/.on-my-push.nu
+cd ~
+ls
+oh-my-posh debug --plain
+oh-my-posh init nu --config ~/hikalu.omp.json | save -f ~/oh-my-posh.nu
+lll
+ls
+oh-my-posh init nu --config 'amro' | save -f ~/oh-my-posh.nu
+ll
+ls
+$nu.data-dir
+cd $nu.data-dir
+ls
+cd vendor\
+ls
+cd autoload\
+ls
+starship preset catppuccin-powerline -o ~/.config/starship.toml
+cd e:\code\mepo\
+ls
+pwd
+cd e:\code\mepo
+ls
+pwd
+ls
+pwd
+cd ~
+cd e:\code\
+cd mepo\
+ls
+pwd
+ls
+pwd
+echo -e "\e[3mThis is italic text in WezTerm\e[0m"
+ls
+pwd
+cd e:\code\
+pwd
+wezterm ls-fonts
+echo -e "\e[3m这是斜体文本\e[0m 这是常规文"
+echo "\e[3m这是斜体文本\e[0m 这是常规文"
+ls
+pwd
+cd e:\code\
+cd e:\code\mepo\
+ls
+pwd
+cd ~
+cd e:\code\mepo\
+pwd
+clear
+vim
+vi
+nvim
+ls
+cd ~/.config/wezterm/
+ls
+gst
+git status
+gaa
+ls
+cd ~
+ls
+cd ~/.config/wezterm/
+gst
+source $nu.config-path
+gst
+source $nu.config-path
+gst
+gaa
+lg
+ls
+gst
+1+1
+cargo --version
+cargo --htlp
+cargo --help
+cargo install yazi
+scoop -v
+scoop -hltp
+scoop -help
+scoop help
+scoop update
+scoop install yazi
+scoop -v
+scoop install yazi
+cargo install yazi
+cargo update
+yazi
+scoop install yazi
+scoop bucket rm main
+scoop bucket add main
+scoop install yazi
+scoop bucket add main
+cd ~/scoop/buckets/
+ls
+scoop bucket add spc https://gitee.com/wlzwme/scoop-proxy-cn.git
+scoop install spc/yazi
+scoop install spc/fzf
+yazi
+where git
+yy
+cd e
+cd e:\
+yy
+scoop install spc/file
+yy
+ya pkg add yazi-rs/plugins:mime-ext
+cd ~/.config/yazi/yazi.toml
+cd ~/.confi
+cd ~/.config
+ls
+mkdir yazi
+ls
+cd ya
+cd yazi\
+ls
+touch yazi.toml
+ls
+vi yazi.toml
+nvim yazi.toml
+ls
+emacs yazi.toml
+ls
+code yazi.toml
+ls
+yy
+scoop uninstall spc/file
+yy
+scoop install spc/file
+scoop install spc/jq
+scoop install spc/fd spc/rg spc/poppler
+scoop install spc/fd spc/poppler
+file -v
+yy
+cd e:
+cd e:\
+ls
+git --version
+ls
+cd ~
+ks
+ls
+ll
+ls
+cd ..
+yy
+scoop uninstall spc/file
+yy
+cd e:\
+ls
+cd code\mepo
+ls
+yy
+ls
+yy
+cd ~
+ls
+cd .config\wezterm\
+gst
+git remote -v
+ls
+exit
+cd e:\
+cd code
+yy
+ls
+cd ~
+ls
+oh-my-posh init nu --print | save -f ~/.on-my-push.nu
+ls
+code .oh-my-posh.nu
+rm oh-my-posh.nu
+ls
+nvim .oh-my-posh.nu
+code .on-my-push.nu
+yy
+ls
+yy
+ls
+source .oh-my-posh.nu
+ls
+cd e:\code\
+ls
+cd mepo\
+ls
+oh-my-posh enable reload
+ls
+source ~/AppData/Roaming/nushell/vendor/autoload/.oh-my-posh.nu
+cd .config\wezterm\posh-themes\
+ls
+code hikalu.omp.json
+oh-my-posh init nu --config 'C:/Users/DQ00658/.config/wezterm/posh-themes/hikalu.omp.json'  --print | save -f ~/.config/wezterm/posh-themes/.my.nu
+ls
+rm oh-my-posh.nu
+ls
+cd .config\wezterm\posh-themes\
+cd e:\code\mepo\
+yy
+cd e:\code\mepo\
+ls
+nvim
+lazygit --version
+scoope search spc/lazygit
+scoop search spc/lazygit
+scoop search lazygit
+scoop uninstall lazygit
+scoop install spc/lazygit
+lazygit --version
+lg
+gst
+cls
+gcc -v
+pacman -v
+scoop search mingw
+scoop search gcc
+cd ~
+ls
+pwd
+cd .config\
+ls
+cd ..
+cd AppData\Roaming\
+ls
+cd cd ~\.config\
+cd cd ~\.config
+cd ~/.config/
+ls
+$env:LOCALAPPDATA
+cd ..
+cd AppData\Local\nvim\
+ls
+nvim
+ls
+touch init.lua
+ls
+vi init.lua
+cd AppData\Local\nvim\
+cd ~/AppData/Local/nvim/
+ls
+vi init.lua
+ls
+cd core\
+ls
+cd ..
+mkdir lua
+cd lua\
+mkdir core
+cd core\
+touch keymap.lua
+vi keymap.lua
+cd ..
+vi init.lua
+scoop install spc/gcc
+gcc -v
+gcc --version
+ya --version
+vi --version
+vi -V1 -v
+ffmpeg -version
+scoop --htlp
+scoop --help
+scoop list
+scoop search ffmpeg
+ls
+cd e:\hikalu\
+ls
+cd ..
+cd playground\
+ls
+git clone git@github.com:luffyZh/web-rtsp-video.git
+ls
+cd web-rtsp-video\
+ls
+cd node-rtsp\
+ls
+pnpm i
+vi package.json
+npm start
+ls
+cd server\
+ls
+pnpm i
+cd ..
+npm start
+ffmpeg -version
+scoop install spc/ffmpeg
+ffmpeg -version
+scoop install spc/ffmpeg
+npm start
+ls
+code .
+gst
+gaa
+exit
+exit
+cd ~/Downloads/
+ls
+exit
+ls
+1111111111111111
+ls
+sls
+ls
+cls
+ls
+cd e:\hikalu\
+ls
+cd test\
+ls
+vi aa.ts
+yy
+nvim
+cd e:\code\
+ls
+cd ..
+cd hikalu\test\
+nvim
+ls
+cd ~
+ks
+ls
+cd AppData\Local\nvim\
+ls
+cd AppData\Local\nvim\
+vi .
+cd e:\code\tgood-pms\
+ls
+vi .
+gst
+lg
+ls
+cd e:\code\tgood-pms\
+vim .
+vi .
+gst
+git checkout src\main.js
+gst
+ffmpeg -version
+ffmpeg -re -stream_loop -1 -i D:\videos\test.mp4 -rtsp_transport tcp -vcodec h264 -f rtsp rtsp://localhost/test
+ffmpeg -re -stream_loop -1 -i e:\video\zooTopia.mp4 -rtsp_transport tcp -vcodec h264 -f rtsp rtsp://localhost:554/test
+q
+ffmpeg -re -stream_loop -1 -i e:\video\zooTopia.mp4 -rtsp_transport tcp -vcodec h264 -f rtsp rtsp://localhost:554/test
+q
+cls
+ffmpeg -re -stream_loop -1 -i e:\video\zooTopia.mp4 -rtsp_transport tcp -vcodec h264 -f rtsp rtsp://localhost:554/test
+ffmpeg -re -stream_loop -1 -i e:\video\zooTopia.mp4 -c:v libx264 -preset ultrafast -tune zerolatency -c:a aac -rtsp_transport tcp -f rtsp rtsp://localhost:554/test
+ffmpeg -re -i e:\video\zooTopia.mp4 -c copy test_output.mp4
+ls
+ffmpeg -stream_loop -1 -re -i "/usr/local/mp4/test.mp4" -vcodec h264 -acodec aac -f rtsp -rtsp_transport tcp rtsp://10.55.134.12/live/test
+netstat -ano | findstr ":554"
+ffmpeg -re -i e:/video/zooTopia.mp4 -c copy -f flv -y rtmp://localhost:21935/live/stream_1?sign=5F9ZgWP6fN
+ffmpeg -re -i ./video.flv -c copy -f flv -y rtmp://localhost:21935/live/stream_1?sign=5F9ZgWP6fN
+ffmpeg -re -i ./test_output.mp4 -c copy -f flv -y rtmp://localhost:21935/live/stream_1?sign=5F9ZgWP6fN
+ffmpeg -re -stream_loop -1 -i "e:\video\zooTopia.mp4" ^
+-c:v libx264 -preset ultrafast -tune zerolatency ^
+-c:a aac -b:a 128k ^
+-f rtsp -rtsp_transport tcp -rtsp_flags prefer_tcp ^
+cls
+ffmpeg -re -stream_loop -1 -i e:\videos\test.mp4 -rtsp_transport tcp -vcodec h264 -f rtsp rtsp://127.0.0.1:25544/test
+ls
+cd e:\playground\
+ls
+cd web-rtsp-video\
+ls
+cd node-rtsp\
+ls
+npm start
+ffmpeg -re -stream_loop -1 -i e:\video\zooTopia.mp4 -rtsp_transport tcp -vcodec h264 -f rtsp rtsp://127.0.0.1:25544/test
+ls
+vi mumu_boot.txt
+cd ~/AppData/Roaming/nushell/
+ls
+vi config.nu
+vim config.nu
+source config.nu
+ls
+vim mumu_boot.txt
+rm test_output.mp4
+ls
+vim mumu_boot.txt
+ls
+winver
+exit
+qwen
+cd ~/AppData/Roaming/nushell/
+qwen
+ls | get filename
+ls | get name
+cd e:\playground\web-rtsp-video\
+ls
+cd node-rtsp\
+ls
+npm start
+ls
+cd e:\playground\web-rtsp-video\node-rtsp\
+ls
+vi .
+yy
+cd c:\
+yy
+npm start
+ls
+npm run start:frontend
+npm start
+cd e:\playground\web-rtsp-video\node-rtsp\
+cd e:\code\tgood-energy-system\
+npm start
+cd ~
+ls
+cd e:
+cd e:\
+sl
+ls
+cd hikalu\
+ls
+cd ggg
+ls
+cd ..
+ls
+git clone --filter=blob:none --sparse https://github.com/MarsWang42/OrbitOS.git orbitos-vault
+ipconfig /flushdns
+git clone --filter=blob:none --sparse https://github.com/MarsWang42/OrbitOS.git orbitos-vault
+cd orbitos-vault\
+ls
+gst
+git sparse-checkout set CN
+ls
+mv CN/* CN/.* . 2>/dev/null; rmdir CN
+cd ..
+rm -rf orbitos-vault\
+ls
+npx degit MarsWang42/OrbitOS/CN my-vault
+ls
+ls my-vault\
+mv my-vault\ orbitis-vault
+ls my-vault\
+ls orbitis-vault\
+npm install -g @google/gemini-cli
+gemini --version
+gemini
+ls
+cd orbitis-vault\
+ls
+cp -r .claude\ .qwen 
+ls
+cd .qwen\
+ls
+vi skills
+cd ..
+mv orbitis-vault\ orbitos-vault
+ls
+cd orbitos-vault\
+qwen
+qwen --experimental-skills
+ls
+cd .claude\
+ls
+vi skills
+ls
+cd ../.qwen/
+ls
+cd e:/hikalu/obsidian-vault/
+cd ..
+cd orbitos-vault\
+ls
+mv qwen\ .qwen
+ls
+cd e:/playground/
+ls
+cd ..
+cd hikalu\test
+ls
+gst
+vi aa.js
+vi .
+cd ~/AppData/Local/nvim/
+ls
+vi .
+cd e:/hikalu
+ls
+cd test\
+vi .
+npm i -g opencode-ai
+cd e:/hikalu/test
+ls
+opencode
+ls
+gst
+vi .
+lg
+git remote -v
+cd e:/script/sc-script-node/
+ls
+node script.js
+cd ..
+cd code\tgood-energy-system\
+gst
+npm start
+y
+npm start
+gst
+lg
+gst
+npm run build
+gst
+ls
+cd e:/code/tgood-energy-system/
+gst
+ls
+cd e:/playground/trea-video-demo/
+ls
+cd ..
+rm -rf trea-video-demo\
+ls
+mkdir tgood-video-server
+cd tgood-video-server\
+trae
+ls
+rm -rf *
+ls
+git init
+lg
+gst
+gaa
+gcu
+gci
+cd ..
+mkdir win-server-demo
+cd win-server-demo\
+ls
+scripts\build-exe.bat
+scripts\install-service.bat
+ls
+sc query WinServerDemo
+net start | findstr WinServerDemo
+services.msc
+scripts\winsw-install.bat
+cd ..
+scripts\winsw-install.bat
+npm start
+ls
+cd e:/playground/trea-video-demo/
+cd e:/playground/tgood-video-server/
+ping 10.212.105.107
+gst
+gaa
+gci
+npm start
+gst
+gaa
+gci
+ls
+npm start
+npm run service:install
+WinSW.exe install
+WinSW.exe uninstall
+WinSW.exe install
+WinSW.exe start
+WinSW.exe uninstall
+WinSW.exe
+WinSW.exe stop
+WinSW.exe uninstall
+WinSW.exe status
+npm run build
+npm run build:ext
+npm run build:exe
+WinSW.exe install
+WinSW.exe start
+WinSW.exe stop
+ls
+cd build\
+ls
+tgood-video-server.exe
+cd e:/playground/tgood-video-server/
+npm run build:exe
+ls
+cd build\
+ls
+tgood-video-server.exe
+npm start
+tgood-video-server.exe
+ls
+tgood-video-server.exe
+gst
+gaa
+gci
+gst
+gaa
+gst
+gaa
+lg
+gst
+ls
+cd ..
+cd code\
+ls
+cd tgood-energy-system\
+npm run build:exe
+cd ..
+WinSW.exe install
+WinSW.exe uninstall
+WinSW.exe install
+sc query "tgood-video-server"
+sc stop "tgood-video-server"
+sc delete "tgood-video-server"
+WinSW.exe install
+WinSW.exe start
+WinSW.exe uninstall
+WinSW.exe install
+WinSW.exe start
+WinSW.exe stop
+WinSW.exe uninstall
+WinSW.exe install
+WinSW.exe start
+node scripts/build-installer.js
+lg
+ls
+cd e:/playground/tgood-video-server/
+lg
+ls
+gst
+ls
+cd src\frontend\
+ls
+npm run dev
+gst
+lg
+ls
+cd e:/code/tgood-energy-system/
+ls
+node script.js
+ls
+op
+oc
+open
+opencode
+node script.js
+gst
+lg
+node script.js
+ls
+node script.js
+cd e:/code/tgood-energy-system/
+ls
+cd ..
+ls
+cd ..
+cd hikalu\orbitos-vault\
+ls
+cd ..
+cd .
+cd code\tgood-energy-system\
+cd ..
+cd code\tgood-energy-system\
+gst
+gaa
+gst
+gci
+gst
+gaa
+gst
+lg
+gst
+gpy
+gpu
+npm run build
+ls
+cd ~
+ls
+mkdir .dotfile
+ls
+cd .dotfile\
+ls
+ln -version
+ln --version
+ls
+cd ..
+cd e:/hikalu/test/
+ls
+ln -s ~/.dotfile/test.js e:\hikalu\test\test.js
+ls
+ln -s e:\hikalu\test\test.js ~/.dotfile/test.js
+ls
+ls -l test.js
+git init
+gst
+lg
+gst
+ls -l test.js
+ls
+rm test.js
+ls
+ln -h
+ln -help
+ln --help
+gst
+ln -s e:\hikalu\test\test.js ~/.dotfile/test.js
+ls
+ls -l
+ls --help
+ls -l
+gst
+vi test.js
+link e:/hikalu/test/test.js ~/.dotfile/test.js
+ls
+rm test.js
+link e:/hikalu/test/test.js ~/.dotfile/test.js
+link --symbolic e:/hikalu/test/test.js ~/.dotfile/test.js
+nu --version
+ls
+ls -l
+ls
+git init
+ls
+yy
+ks
+gst
+git remote -v
+gaa
+gci
+gpu
+pwd
+yy
+ls
+cd Users\
+kls
+ls
+cd DQ00658\
+cd AppData\
+ls
+cd Roaming\
+ls
+yy
+pwd
+cd nvim\
+ls
+pwd
+ls
+cd ..
+ls
+cd dotfiles\
+ls
+gst
+ls
+cd ..
+ls
+cd AppData\
+cd Local\
+ls
+cd ..
+cd ll
+cd ..
+ls
+cd AppData\
+ls
+cd Roaming\
+ls
+cd nushell\
+ls
+pwd
+cd ~/dotfiles/
+ls
+sl
+ls
+gst
+ls
+vi powershell-link-bash.ps1
+gst
+cd ..
+ls
+cd ..
+cd .config\
+ls
+ls
+gst
+gaa
+lg
+gst
+ls
+gaa
+gst
+gpu
+ls
+git branch -M main
+ls
+git remote add origin git@github.com:HIKALU-Z/dotfiles.git
+git push -u origin main
+yy
+vi

@@ -1,0 +1,234 @@
+# 启用 JSON Schema 校验，编辑器自动补全（可选）
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# -------------------------- 核心配置：提示符布局 & 格式 --------------------------
+# 还原 Gruvbox 主题的信息展示顺序和 Powerline 分隔符风格
+format = """
+[](dark_red)\
+$os\
+$username\
+[](bg:dark_yellow fg:dark_red)\
+$directory\
+[](bg:dark_green fg:dark_yellow)\
+$git_branch\
+$git_status\
+[](bg:dark_blue fg:dark_green)\
+$c\
+$rust\
+$golang\
+$nodejs\
+$python\
+$php\
+[](bg:purple fg:dark_blue)\
+$conda\
+[](bg:orange fg:purple)\
+$time\
+[ ](fg:orange)\
+$cmd_duration\
+$line_break\
+$character
+"""
+
+# 选择 Gruvbox 配色方案（dark=深色主题，light=浅色主题，可切换）
+palette = 'gruvbox_light'
+
+# -------------------------- Gruvbox 核心配色定义（深色/浅色） --------------------------
+[palettes.gruvbox_dark]
+# Gruvbox Dark 标准配色（对应 Oh My Posh gruvbox 深色主题）
+bg0_h = "#1d2021" # 深黑（背景高亮）
+bg0 = "#282828"   # 主背景
+bg1 = "#3c3836"   # 背景高亮 1
+bg2 = "#504945"   # 背景高亮 2
+bg3 = "#665c54"   # 背景高亮 3
+bg4 = "#7c6f64"   # 背景高亮 4
+
+fg0 = "#fbf1c7" # 主前景
+fg1 = "#ebdbb2" # 前景高亮 1
+fg2 = "#d5c4a1" # 前景高亮 2
+fg3 = "#bdae93" # 前景高亮 3
+fg4 = "#a89984" # 前景高亮 4
+
+# 核心色彩（对应配置中使用的别名）
+dark_red = "#cc241d"    # 红（用户/系统模块）
+dark_green = "#98971a"  # 绿（Git 模块）
+dark_yellow = "#d79921" # 黄（目录模块）
+dark_blue = "#458588"   # 蓝（开发语言模块）
+purple = "#b16286"      # 紫（虚拟环境模块）
+orange = "#d65d0e"      # 橙（时间模块）
+white = "#ebdbb2"       # 白（文字前景）
+crust = "#1d2021"       # 最深色（文字背景）
+
+[palettes.gruvbox_light]
+# Gruvbox Light 标准配色（如需浅色主题，切换 palette = 'gruvbox_light' 即可）
+bg0_h = "#f9f5d7" # 浅白（背景高亮）
+bg0 = "#fbf1c7"   # 主背景
+bg1 = "#ebdbb2"   # 背景高亮 1
+bg2 = "#d5c4a1"   # 背景高亮 2
+bg3 = "#bdae93"   # 背景高亮 3
+bg4 = "#a89984"   # 背景高亮 4
+
+fg0 = "#282828" # 主前景
+fg1 = "#3c3836" # 前景高亮 1
+fg2 = "#504945" # 前景高亮 2
+fg3 = "#665c54" # 前景高亮 3
+fg4 = "#7c6f64" # 前景高亮 4
+
+# 核心色彩（保持与深色主题一致的色彩别名，仅调整明暗）
+dark_red = "#9d0006"    # 红（用户/系统模块）
+dark_green = "#79740e"  # 绿（Git 模块）
+dark_yellow = "#b57614" # 黄（目录模块）
+dark_blue = "#076678"   # 蓝（开发语言模块）
+purple = "#8f3f71"      # 紫（虚拟环境模块）
+orange = "#af3a03"      # 橙（时间模块）
+white = "#3c3836"       # 白（文字前景）
+crust = "#f9f5d7"       # 最浅色（文字背景）
+
+# -------------------------- 模块 1：操作系统（OS） --------------------------
+[os]
+disabled = false
+style = "bg:dark_red fg:crust"
+
+[os.symbols]
+Windows = ""
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Arch = "󰣇"
+
+# -------------------------- 模块 2：用户名（可指定固定值，贴合 Gruvbox 风格） --------------------------
+[username]
+show_always = true                  # 始终显示用户名
+style_user = "bg:dark_red fg:crust" # Gruvbox 红底深色文字
+style_root = "bg:dark_red fg:crust" # root 用户保持相同风格
+# 可选1：动态获取系统用户名（默认）
+format = '[ $user]($style)'
+
+# 可选2：指定固定用户名（如固定为 "GruvUser"，取消注释即可使用）
+# format = '[ GruvUser ]($style)'
+
+# -------------------------- 模块 3：工作目录 --------------------------
+[directory]
+style = "bg:dark_yellow fg:crust" # Gruvbox 黄底深色文字
+format = "[ $path ]($style)"
+truncation_length = 3             # 路径过长时保留最后 3 级
+truncation_symbol = "…/"          # 截断前缀
+# Gruvbox 风格目录别名替换（简洁直观）
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Projects" = "󰲋 "
+"Desktop" = "�desktop "
+
+# -------------------------- 模块 4：Git 分支 --------------------------
+[git_branch]
+symbol = ""                                                     # Git 图标，贴合 Gruvbox 风格
+style = "bg:dark_green fg:crust"                                 # Gruvbox 绿底深色文字
+format = '[[ $symbol $branch ](fg:crust bg:dark_green)]($style)'
+disabled = false
+
+# -------------------------- 模块 5：Git 状态 --------------------------
+[git_status]
+style = "bg:dark_green fg:crust"                                           # 与 Git 分支保持配色统一
+format = '[[($all_status$ahead_behind )](fg:crust bg:dark_green)]($style)'
+disabled = false
+# Git 状态图标（Gruvbox 风格简约图标）
+# [git_status.symbols]
+# ahead = "↑"
+# behind = "↓"
+# diverged = "↕"
+# untracked = "?"
+# staged = "✓"
+# unstaged = "✗"
+# renamed = "➜"
+# deleted = "�	delete"
+
+# -------------------------- 模块 6：开发语言模块（Gruvbox 蓝底风格） --------------------------
+# C 语言
+[c]
+symbol = " "
+style = "bg:dark_blue fg:crust"
+format = '[[ $symbol( $version) ](fg:crust bg:dark_blue)]($style)'
+disabled = false
+
+# Rust
+[rust]
+symbol = ""
+style = "bg:dark_blue fg:crust"
+format = '[[ $symbol( $version) ](fg:crust bg:dark_blue)]($style)'
+disabled = false
+
+# Go
+[golang]
+symbol = ""
+style = "bg:dark_blue fg:crust"
+format = '[[ $symbol( $version) ](fg:crust bg:dark_blue)]($style)'
+disabled = false
+
+# Node.js
+[nodejs]
+symbol = ""
+style = "bg:dark_blue fg:crust"
+format = '[[ $symbol( $version) ](fg:crust bg:dark_blue)]($style)'
+disabled = false
+
+# Python
+[python]
+symbol = ""
+style = "bg:dark_blue fg:crust"
+format = '[[ $symbol( $version) ](fg:crust bg:dark_blue)]($style)'
+disabled = false
+
+# PHP
+[php]
+symbol = ""
+style = "bg:dark_blue fg:crust"
+format = '[[ $symbol( $version) ](fg:crust bg:dark_blue)]($style)'
+disabled = false
+
+# -------------------------- 模块 7：虚拟环境 --------------------------
+# Conda 环境
+[conda]
+symbol = "  "
+style = "fg:crust bg:purple"
+format = '[$symbol$environment ]($style)'
+ignore_base = false
+disabled = false
+
+
+# -------------------------- 模块 8：时间 --------------------------
+[time]
+disabled = false
+time_format = "%R"                                   # 24 小时制（时:分）
+style = "bg:orange fg:crust"                         # Gruvbox 橙底深色文字
+format = '[[  $time ](fg:crust bg:orange)]($style)'
+
+# -------------------------- 模块 9：命令执行耗时 --------------------------
+[cmd_duration]
+show_milliseconds = true
+format = " in $duration "
+style = "bg:orange fg:crust"
+disabled = false
+min_time_to_notify = 1000    # 超过 1 秒才显示（可调整）
+
+# -------------------------- 模块 10：命令输入提示符 --------------------------
+[character]
+disabled = false
+# Gruvbox 风格提示符符号，成功/失败区分颜色
+success_symbol = '[❯](bold fg:dark_green)'
+error_symbol = '[❯](bold fg:dark_red)'
+vimcmd_symbol = '[❮](bold fg:dark_green)'
+vimcmd_replace_one_symbol = '[❮](bold fg:purple)'
+vimcmd_replace_symbol = '[❮](bold fg:purple)'
+
+# -------------------------- 模块 11：换行配置（可选） --------------------------
+[line_break]
+disabled = false # 启用换行，让命令输入区更整洁
