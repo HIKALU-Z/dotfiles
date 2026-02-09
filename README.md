@@ -15,26 +15,32 @@
 
 ### 首次安装（Windows）
 
-1. **克隆仓库**
-   ```powershell
-   git clone <your-repo-url> e:\playground\dotfiles
-   cd e:\playground\dotfiles
-   ```
+#### 方式一：使用安装脚本（推荐）
 
-2. **创建符号链接**
-   ```powershell
-   # WezTerm
-   New-Item -ItemType SymbolicLink -Path "~\.config\wezterm" -Target "e:\playground\dotfiles\wezterm"
+```powershell
+# 1. 克隆仓库
+git clone git@github.com:HIKALU-Z/dotfiles.git $env:USERPROFILE\dotfiles
+cd $env:USERPROFILE\dotfiles
 
-   # Neovim
-   New-Item -ItemType SymbolicLink -Path "~\AppData\Local\nvim" -Target "e:\playground\dotfiles\nvim"
+# 2. 运行安装脚本（建议以管理员身份运行）
+.\install.ps1
+```
 
-   # Nushell
-   New-Item -ItemType SymbolicLink -Path "~\AppData\Roaming\nushell" -Target "e:\playground\dotfiles\nushell"
+#### 方式二：手动创建符号链接
 
-   # Starship
-   New-Item -ItemType SymbolicLink -Path "~\.config\starship.toml" -Target "e:\playground\dotfiles\starship\starship.toml"
-   ```
+```powershell
+# WezTerm
+New-Item -ItemType SymbolicLink -Path "~\.config\wezterm" -Target "$env:USERPROFILE\dotfiles\wezterm"
+
+# Neovim
+New-Item -ItemType SymbolicLink -Path "~\AppData\Local\nvim" -Target "$env:USERPROFILE\dotfiles\nvim"
+
+# Nushell
+New-Item -ItemType SymbolicLink -Path "~\AppData\Roaming\nushell" -Target "$env:USERPROFILE\dotfiles\nushell"
+
+# Starship
+New-Item -ItemType SymbolicLink -Path "~\.config\starship.toml" -Target "$env:USERPROFILE\dotfiles\starship\starship.toml"
+```
 
 ### 更新配置
 
@@ -74,7 +80,9 @@ dotfiles/
 │   ├── starship-dracula.toml  # Dracula 主题
 │   ├── starship-gruvbox.toml  # Gruvbox 主题
 │   └── starship-agnoest.toml  # Agnoest 主题
-└── README.md                   # 本文件
+├── install.ps1                # Windows 自动安装脚本
+├── .gitignore                 # Git 忽略文件
+└── README.md                  # 本文件
 ```
 
 ## 🔧 各工具说明
