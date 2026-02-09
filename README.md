@@ -85,6 +85,8 @@ dotfiles/
 │   ├── config/                # 配置文件
 │   └── state/                 # 状态文件
 ├── install.ps1                # Windows 自动安装脚本
+├── backup.ps1                 # 自动备份脚本
+├── scheduled-task.xml         # Windows 定时任务配置
 ├── .gitignore                 # Git 忽略文件
 └── README.md                  # 本文件
 ```
@@ -144,6 +146,62 @@ Remove-Item -Path "~\.config\wezterm" -Recurse -Force
 
 # 从备份恢复
 Copy-Item -Path "e:\playground\dotfiles\.backup\wezterm_YYYYMMDD_HHMMSS" -Destination "~\.config\wezterm" -Recurse
+```
+
+### 自动备份
+
+#### 手动运行备份
+
+```powershell
+# 进入 dotfiles 目录
+cd e:\playground\dotfiles
+
+# 运行备份脚本（使用默认提交信息）
+.\backup.ps1
+
+# 或使用自定义提交信息
+.\backup.ps1 -Message "Update wezterm config"
+```
+
+#### 设置定时自动备份（Windows）
+
+**方式一：使用 XML 导入（推荐）**
+
+```powershell
+# 以管理员身份运行 PowerShell，导入任务
+schtasks /create /tn "Dotfiles Auto Backup" /xml "e:\playground\dotfiles\scheduled-task.xml"
+```
+
+**方式二：使用命令行创建**
+
+```powershell
+# 以管理员身份运行
+$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-ExecutionPolicy Bypass -File `"e:\playground\dotfiles\backup.ps1`"" -WorkingDirectory "e:\playground\dotfiles"
+
+$trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At "22:00"
+
+$settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries -StartWhenAvailable
+
+Register-ScheduledTask -TaskName "Dotfiles Auto Backup" -Action $action -Trigger $trigger -Settings $settings -Description "每周自动备份 dotfiles 到 GitHub"
+```
+
+**管理定时任务**
+
+```powershell
+# 查看任务
+Get-ScheduledTask -TaskName "Dotfiles Auto Backup"
+
+# 手动运行任务
+Start-ScheduledTask -TaskName "Dotfiles Auto Backup"
+
+# 禁用任务
+Disable-ScheduledTask -TaskName "Dotfiles Auto Backup"
+
+# 启用任务
+Enable-ScheduledTask -TaskName "Dotfiles Auto Backup"
+
+# 删除任务
+Unregister-ScheduledTask -TaskName "Dotfiles Auto Backup" -Confirm:$false
 ```
 
 ## ⚠️ 注意事项
