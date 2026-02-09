@@ -1,0 +1,38 @@
+# Backup directory - contains old configs with .git folders
+.backup/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Nushell history (may contain sensitive commands)
+nushell/history.txt
+
+# Neovim
+nvim/lazy-lock.json
+nvim/.luarc.json
+
+# WezTerm
+wezterm/screenshots/
+
+# Starship (if you have local-only themes)
+# starship/local-*.toml
