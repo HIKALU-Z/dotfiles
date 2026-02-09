@@ -24,9 +24,6 @@ Thumbs.db
 *.temp
 *.log
 
-# Nushell history (may contain sensitive commands)
-nushell/history.txt
-
 # Neovim
 nvim/lazy-lock.json
 nvim/.luarc.json
