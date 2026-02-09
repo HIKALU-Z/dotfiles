@@ -11,7 +11,7 @@ Write-Host @"
 ╔══════════════════════════════════════════════════════════════╗
 ║                    Dotfiles Installer                        ║
 ║                                                              ║
-║  WezTerm | Neovim | Nushell | Starship                      ║
+║  WezTerm | Neovim | Nushell | Starship | Yazi               ║
 ╚══════════════════════════════════════════════════════════════╝
 "@ -ForegroundColor Cyan
 
@@ -48,6 +48,12 @@ $configs = @(
         Target = "$env:USERPROFILE\.config\starship.toml"
         TargetParent = "$env:USERPROFILE\.config"
         IsFile = $true
+    },
+    @{
+        Name = "Yazi"
+        Source = Join-Path $DotfilesPath "yazi"
+        Target = "$env:APPDATA\yazi"
+        TargetParent = "$env:APPDATA"
     }
 )
 

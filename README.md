@@ -10,6 +10,7 @@
 | [Neovim](https://neovim.io/) (LazyVim) | `nvim/` | `~/.config/nvim` 或 `~/AppData/Local/nvim` |
 | [Nushell](https://www.nushell.sh/) | `nushell/` | `~/.config/nushell` 或 `~/AppData/Roaming/nushell` |
 | [Starship](https://starship.rs/) | `starship/` | `~/.config/starship.toml` |
+| [Yazi](https://yazi-rs.github.io/) | `yazi/` | `~/.config/yazi` 或 `~/AppData/Roaming/yazi` |
 
 ## 🚀 快速开始
 
@@ -80,6 +81,9 @@ dotfiles/
 │   ├── starship-dracula.toml  # Dracula 主题
 │   ├── starship-gruvbox.toml  # Gruvbox 主题
 │   └── starship-agnoest.toml  # Agnoest 主题
+├── yazi/                       # Yazi 文件管理器配置
+│   ├── config/                # 配置文件
+│   └── state/                 # 状态文件
 ├── install.ps1                # Windows 自动安装脚本
 ├── .gitignore                 # Git 忽略文件
 └── README.md                  # 本文件
@@ -106,6 +110,11 @@ dotfiles/
 - 跨 shell 的极简提示符
 - 支持多种语言和工具的状态显示
 - 可切换不同主题配置
+
+### Yazi
+- 基于 Rust 的终端文件管理器
+- 异步 I/O，性能优秀
+- 支持插件和自定义主题
 
 ## 📝 常用操作
 
@@ -149,6 +158,7 @@ Copy-Item -Path "e:\playground\dotfiles\.backup\wezterm_YYYYMMDD_HHMMSS" -Destin
 - [LazyVim 文档](https://www.lazyvim.org/)
 - [Nushell 文档](https://www.nushell.sh/book/)
 - [Starship 文档](https://starship.rs/guide/)
+- [Yazi 文档](https://yazi-rs.github.io/docs/)
 
 ## 📄 License
 
